@@ -169,10 +169,7 @@ Original file is located at
 #     time.sleep(0.25) # 브라우저가 그래프를 그릴 수 있는 충분한 시간 확보
 #     st.rerun()
 
-import subprocess
-import threading
-import time
-import re
+
 
 
 
