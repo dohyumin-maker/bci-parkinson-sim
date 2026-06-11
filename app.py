@@ -173,9 +173,7 @@ Original file is located at
 
 
 
-# 3. 스트림릿 백그라운드 실행
-subprocess.Popen(["streamlit", "run", "app.py", "--server.headless", "true", "--server.enableCORS", "false", "--server.enableXsrfProtection", "false"])
-time.sleep(3)
+
 
 # 4. 터널 개방 및 주소 자동 추출
 print("🔗 발표용 무적 초고속 링크를 생성 중입니다. 5초만 기다려주세요...")
