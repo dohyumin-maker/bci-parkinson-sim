@@ -175,10 +175,7 @@ Original file is located at
 
 
 
-# 4. 터널 개방 및 주소 자동 추출
-print("🔗 발표용 무적 초고속 링크를 생성 중입니다. 5초만 기다려주세요...")
-proc = subprocess.Popen(["cloudflared", "tunnel", "--url", "http://localhost:8501"], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
-
+ 
 for line in proc.stdout:
     if "trycloudflare.com" in line:
         url = re.search(r'https://[a-zA-Z0-9-]+\.trycloudflare\.com', line)
