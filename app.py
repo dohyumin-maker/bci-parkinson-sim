@@ -174,13 +174,7 @@ import threading
 import time
 import re
 
-# 1. 기존에 켜져 있던 불안정한 서버들 강제 종료
-!pkill -f streamlit
-!pkill -f cloudflared
 
-# 2. 클라우드플레어 시스템 설치
-!wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
-!dpkg -i cloudflared-linux-amd64.deb &>/dev/null
 
 # 3. 스트림릿 백그라운드 실행
 subprocess.Popen(["streamlit", "run", "app.py", "--server.headless", "true", "--server.enableCORS", "false", "--server.enableXsrfProtection", "false"])
