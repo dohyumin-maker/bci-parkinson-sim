@@ -171,16 +171,3 @@ Original file is located at
 
 
 
-
-
-
-
- 
-for line in proc.stdout:
-    if "trycloudflare.com" in line:
-        url = re.search(r'https://[a-zA-Z0-9-]+\.trycloudflare\.com', line)
-        if url:
-            print("\n" + "="*60)
-            print(f"🚀 실시간 대시보드 시연 링크: {url.group(0)}")
-            print("="*60 + "\n")
-            break
