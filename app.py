@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/19tbO-XymAgsgmxPOgzpk-1cV7Hrkl39m
 """
 
-!pip install -q streamlit pandas numpy
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile app.py
